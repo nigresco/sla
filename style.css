@@ -1,5 +1,11 @@
+:root {
+    --text-color: #DBE4EF;
+    --card-front-color: #144480;
+    --card-back-color: #00F4BF;
+    }
 body{
-    background-color:rgb(214, 97, 97);  
+    background-color: white;
+ 
 }
 footer{
     background-color: black;
@@ -15,6 +21,30 @@ footer p {
     margin-top: 0.5rem;
 }
 body {
-    background-color: rgb(214, 97, 97);
+    background:url('bg-desktop.webp');
     font-family: Bai Jamjuree;
     }
+#container {
+display: flex;
+    }
+    .cartao {
+        margin: 1rem 1rem;
+        background-color: aqua;
+        height: 20rem;
+        flex-grow: 1;
+        flex-basis: calc(33% - 6rem);
+        }
+        .cartao__conteudo {
+            text-align: center;
+            background-color: aquamarine;
+            height: 100%;
+            }
+            .cartao__conteudo h3 {
+                color: var(--text-color);
+border: 1px solid var(--text-color);
+                padding: 0.5rem;
+                position: absolute;
+                margin: 0.6rem;
+                border-radius: 0.6rem;
+                font-size: 1vw;
+                }
